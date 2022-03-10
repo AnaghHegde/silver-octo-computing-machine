@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "APILogin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tRunLogin: () => {\t\n\t\tLiquids_Login.clear();\n\t\tif(UserName.text==\"\" || UserPwd.text==\"\") {\n\t\t\tshowAlert(\"User Name and Password required\");\n\t\t}\n\t\telse{\t\t\t\n\t\t\tstoreValue('key_UserName', UserName.text);\n\t\t\tstoreValue('key_UserPwd', UserPwd.text);\n\t\t\t\n\t\t\tLiquids_Login.run(\n\t\t\t\t() => {\n\t\t\t\t\tstoreValue('key_Token', Liquids_Login.data.token);\n\t\t\t\t\tstoreValue('key_UserId', Liquids_Login.data.user.id);\n\t\t\t\t\tstoreValue('key_LoginFail', Liquids_Login.data.message);\n\t\t\t\t\tstoreValue('key_Referer', 'https://terminal.kpler.com');\t\t\t\n\t\t\t\t\tshowAlert('Login successful');\n\t\t\t\t},\n\t\t\t\t() => {showAlert(\"Can't login to Liquids API\")}\n\t\t\t)\n\t\t}\n\t},\n\tInitPage: () => {\n\t\tstoreValue('key_UserName', \"\");\n\t\tstoreValue('key_UserPwd', \"\");\n\t\tstoreValue('key_Connected', false);\n\t\tstoreValue('key_Token', \"\");\n\t\tstoreValue('key_UserId', \"\");\n\t\tstoreValue('key_Referer',\"\");\n\t\treturn \"test\";\n\t}\n}\t",
+    "variables": []
+  },
+  "id": "APILogin_JSObject1",
+  "deleted": false,
+  "gitSyncId": "61ae2cefd3e4214454c24ccd_6229b0d7f782567d61f16f5d"
+}

@@ -1,0 +1,21 @@
+{
+  "isPublic": false,
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "619e62e5f6f14050cbd7cd43",
+  "color": "#ECECEC",
+  "icon": "bitcoin",
+  "slug": "data-ingestion-api-prod",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
+  "createdAt": {
+    "seconds": 1638804719,
+    "nanos": 337000000
+  },
+  "deleted": false
+}
